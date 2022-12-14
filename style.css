@@ -13,3 +13,13 @@ p {
   line-height: 1.5;
   padding: 0 20px;
 }
+
+.navbar-nav > li {
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.dropdown-item > img {
+  padding-left: 0px;
+  padding-right: 7px;
+}
