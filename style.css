@@ -18,7 +18,8 @@ h1 {
   font: bold;
   font-size: 100px;
   font-variant: small-caps;
-  font-family: 'Impact', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Teko', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 500;
   color: #FAF9F6;
   padding-top: 20px;
   text-shadow: 1px 1px 5px #27aae1;
@@ -28,20 +29,51 @@ p {
   font: bold;
   font-size: 15px;
   font-variant: normal;
-  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Teko', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 500;
   color: #FAF9F6;
-  padding-top: 20px;
+  padding-top: 2px;
+  padding-bottom: 2px;
   text-shadow: 1px 1px 5px #27aae1;
 }
 
-#testimonial-text {
+#text-aboutMe {
+  text-align: left;
+}
+
+#text-testimonial {
   font: bold;
   font-size: 15px;
   font-variant: normal;
-  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Teko', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 500;
   color: #FAF9F6;
   padding-top: 0px;
   text-shadow: 1px 1px 5px #27aae1;
+}
+
+#text-carouselUpper {
+  font: bold;
+  font-size: 45px;
+  font-variant: normal;
+  font-family: 'Teko', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  color: #FAF9F6;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-shadow: 1px 1px 4px #231f20;
+}
+
+#text-carouselLower {
+  font: bold;
+  font-size: 30px;
+  font-variant: normal;
+  font-family: 'Teko', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 300;
+  color: #FAF9F6;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-shadow: 1px 1px 2px #231f20;
 }
 
 .row {
@@ -54,10 +86,12 @@ p {
 
 .navbar-nav {
   align-items: center;
-  font-size: 30px;
-  font-family: 'Impact', 'Helvetica', 'Arial', sans-serif;
+  font-size: 40px;
+  font-family: 'Teko', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 500;
   padding-top: 5px;
   padding-bottom: 5px;
+  text-shadow: 1px 1px 2px #27a9e140;
 }
 
 .nav-item {
@@ -85,26 +119,47 @@ p {
   padding-right: 20px;
 }
 
-#img-override-carousel {
+#img-override-carouselA, #img-override-carouselB, #img-override-carouselC {
   width: 100%;
   height: 600px !important;
-  object-fit: fill;
+  object-fit: cover;
   padding: 0px;
+  opacity: 0.3;
 }
 
-#aboutmeB {
-  font: bold;
-  font-size: medium;
-  font-family: 'Helvetica', 'Arial', sans-serif;
+#img-override-carouselA {
+  object-position: 0px -425px;
 }
 
-#testimonial-picture {
-  object-fit: contain;
+#img-override-carouselB {
+  object-position: 0px -250px;
+}
+
+#img-override-carouselC {
+  object-position: 0px -600px;
+}
+
+#img-override-weston {
+  object-fit: fill;
+  height: inherit;
+  width: inherit;
+  padding-right: 0px;
+}
+
+#img-override-testimonial {
+  object-fit: fill;
   align-items: center;
   display: flex;
-  padding-top: 5px;
+  padding-top: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
-  block-size: 150px;
+  block-size: 200px;
+}
+
+#container-override-testimonial {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 20px;
 }

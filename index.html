@@ -8,9 +8,16 @@
     <!-- below includes Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- below include Google Fonts CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+    </style>
     <!-- below includes our stylesheet  -->
-    <link href="style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
     <title>Good Lift Performance About Me Page</title>
 </head>
 
@@ -19,9 +26,9 @@
         <div class="container-fluid" id="navbarContent">
             <nav class="navbar-nav">
                 <a class="nav-link">
-                    <img src="img/glp-main-white.png" id="img-override-glpimage">
+                    <img src="img/glp-main-white.png" id="img-override-glpimage" />
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler mb-4" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -34,19 +41,13 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="memberships.html">
-                                Memberships
-                            </a>
+                            <a class="nav-link" href="memberships.html"> Memberships </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="articles.html">
-                                Articles
-                            </a>
+                            <a class="nav-link" href="articles.html"> Articles </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">
-                                Contact Me
-                            </a>
+                            <a class="nav-link" href="contact.html"> Contact Me </a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -56,20 +57,20 @@
                             <ul class="dropdown-menu">
                                 <li>
                                     <a class="dropdown-item" href="https://gym-five.com/weston/">
-                                        <img src="img/gym5.png" id="img-override-navlogos">
+                                        <img src="img/gym5.png" id="img-override-navlogos" />
                                         Gym Number 5
                                     </a>
                                 </li>
                                 <li>
                                     <a class="dropdown-item" href="#">
-                                        <img src="img/cupl-secondary-gb.png" id="img-override-navlogos">
+                                        <img src="img/cupl-secondary-gb.png" id="img-override-navlogos" />
                                         Colorado Powerlifting
                                     </a>
                                 </li>
                                 <li>
                                     <a class="dropdown-item" href="https://www.usapowerlifting.com/">
                                         <!--added link to the home page for usapl here, might want to change depending on Westiepoo-->
-                                        <img src="img/usapl.png" id="img-override-navlogos">
+                                        <img src="img/usapl.png" id="img-override-navlogos" />
                                         USA Powerlifting
                                     </a>
                                 </li>
@@ -87,43 +88,39 @@
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#homepageCarousel" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#homepageCarousel" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#homepageCarousel" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#homepageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#homepageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <!-- Content -->
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="5000">
-                <img src="img/dog.jpg" id="img-override-carousel" class="d-block w-100" alt="...">
+                <img src="img/photographs/DSC0007.JPG" id="img-override-carouselA" class="d-block w-100" alt="..." />
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Leadership</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <h5 id="text-carouselUpper">LEADERSHIP</h5>
+                    <p id="text-carouselLower">Seize the Day</p>
                 </div>
             </div>
             <div class="carousel-item" data-bs-interval="5000">
-                <img src="img/cat.jpg" id="img-override-carousel" class="d-block w-100" alt="...">
+                <img src="img/photographs/DSC0009.JPG" id="img-override-carouselB" class="d-block w-100" alt="..." />
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Relationship</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
+                    <h5 id="text-carouselUpper">RELATIONSHIP</h5>
+                    <p id="text-carouselLower">Seize the Day</p>
                 </div>
             </div>
             <div class="carousel-item" data-bs-interval="5000">
-                <img src="img/fish.jpg" id="img-override-carousel" class="d-block w-100" alt="...">
+                <img src="img/photographs/DSC0010.jpg" id="img-override-carouselC" class="d-block w-100" alt="..." />
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Community</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
+                    <h5 id="text-carouselUpper">COMMUNITY</h5>
+                    <p id="text-carouselLower">Seize the Day</p>
                 </div>
             </div>
         </div>
         <!-- Reactability -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#homepageCarousel"
-            data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#homepageCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#homepageCarousel"
-            data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#homepageCarousel" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
@@ -133,44 +130,53 @@
     <div class="container-fluid text-center">
         <div class="row">
             <div class="col">
-                <img src="">
-                Will put picture of weston here
+                <img src="IMG/photographs/DSC0006.JPG" id="img-override-weston" />
             </div>
-            <div class="col">
+            <div class="col" id="text-aboutMe">
                 <p>
-                Weston Hirschauer is the founder, owner, and head coach of Good Lift Performance, an online powerlifting
-                coaching company.
-
-                During his sophomore year of college at Iowa State University, Weston joined the weightlifting club and
-                was introduced to powerlifting. In the fall of 2015, he competed in his first powerlifting competition
-                and has been passionate about the sport ever since. He started coaching his friends from the club for
-                free in 2016 to gain hands-on experience. News of his athletes success started to spread and his roster
-                continued to grow. Weston graduated from Iowa State University in 2018 with a Bachelors of Science in
-                Exercise Science with six different internships during his four years of undergrad ranging from
-                collegiate strength and conditioning to personal training and corporate wellness. In 2020 Weston decided
-                to leave the corporate fitness world and go full time into coaching for powerlifting.
-
-                Weston's most notable strengths as a coach are being able to think outside the box and attention to
-                detail. Being a low responder to training, he has had to learn to optimize every aspect of his own
-                training to make even the smallest jumps in progress. This niche in his own training ended up being a
-                huge advantage to his athletes. Learning everything he could about programming, technique coaching, and
-                leadership has enabled him to gain a deep pool of knowledge that allows him to get the most out of his
-                athletes. Weston specializes in getting stubborn lifts to progress when they don't respond to
-                conventional training methods.
+                    Weston Hirschauer is the founder, owner, and head coach of Good Lift
+                    Performance, an online powerlifting coaching company.
+                </p>
+                <p>
+                    During his sophomore year of college at Iowa State University,
+                    Weston joined the weightlifting club and was introduced to
+                    powerlifting. In the fall of 2015, he competed in his first
+                    powerlifting competition and has been passionate about the sport
+                    ever since. He started coaching his friends from the club for free
+                    in 2016 to gain hands-on experience. News of his athletes success
+                    started to spread and his roster continued to grow. Weston graduated
+                    from Iowa State University in 2018 with a Bachelors of Science in
+                    Exercise Science with six different internships during his four
+                    years of undergrad ranging from collegiate strength and conditioning
+                    to personal training and corporate wellness. In 2020 Weston decided
+                    to leave the corporate fitness world and go full time into coaching
+                    for powerlifting.
+                </p>
+                <p>
+                    Weston's most notable strengths as a coach are being able to think
+                    outside the box and attention to detail. Being a low responder to
+                    training, he has had to learn to optimize every aspect of his own
+                    training to make even the smallest jumps in progress. This niche in
+                    his own training ended up being a huge advantage to his athletes.
+                    Learning everything he could about programming, technique coaching,
+                    and leadership has enabled him to gain a deep pool of knowledge that
+                    allows him to get the most out of his athletes. Weston specializes
+                    in getting stubborn lifts to progress when they don't respond to
+                    conventional training methods.
                 </p>
             </div>
         </div>
     </div>
 
     <h1 class="container-fluid text-center">Testimonials</h1>
-    <div class="container-fluid text-center" id="testimonials" style="padding-bottom: 20px;">
+    <div class="container-fluid text-center" id="container-override-testimonial">
         <div class="row">
             <div class="col-md-4 gx-3 gy-4">
                 <div class="container-fluid card text-bg-dark">
-                    <img src="img/glp-main-white.png" class="card-img-top" alt="" id="testimonial-picture">
+                    <img src="img/photographs/DSC0001.JPG" class="card-img-top" alt="" id="img-override-testimonial" />
                     <div class="card-body">
-                        <blockquote class="blockquote mb-4">
-                            <p id="testimonial-text">Testimonial Here</p>
+                        <blockquote class="blockquote">
+                            <p id="text-testimonial">Testimonial Here</p>
                             <footer class="blockquote-footer">Person Here</footer>
                         </blockquote>
                     </div>
@@ -178,10 +184,10 @@
             </div>
             <div class="col-md-4 gx-3 gy-4">
                 <div class="container-fluid card text-bg-dark">
-                    <img src="img/glp-main-white.png" class="card-img-top" alt="" id="testimonial-picture">
+                    <img src="img/glp-main-white.png" class="card-img-top" alt="" id="img-override-testimonial" />
                     <div class="card-body">
-                        <blockquote class="blockquote mb-4">
-                            <p id="testimonial-text">Testimonial Here</p>
+                        <blockquote class="blockquote">
+                            <p id="text-testimonial">Testimonial Here</p>
                             <footer class="blockquote-footer">Person Here</footer>
                         </blockquote>
                     </div>
@@ -189,10 +195,10 @@
             </div>
             <div class="col-md-4 gx-3 gy-4">
                 <div class="container-fluid card text-bg-dark">
-                    <img src="img/glp-main-white.png" class="card-img-top" alt="" id="testimonial-picture">
+                    <img src="img/glp-main-white.png" class="card-img-top" alt="" id="img-override-testimonial" />
                     <div class="card-body">
-                        <blockquote class="blockquote mb-4">
-                            <p id="testimonial-text">Testimonial Here</p>
+                        <blockquote class="blockquote">
+                            <p id="text-testimonial">Testimonial Here</p>
                             <footer class="blockquote-footer">Person Here</footer>
                         </blockquote>
                     </div>
@@ -202,10 +208,10 @@
         <div class="row">
             <div class="col-md-4 gx-3 gy-4">
                 <div class="container-fluid card text-bg-dark">
-                    <img src="img/glp-main-white.png" class="card-img-top" alt="" id="testimonial-picture">
+                    <img src="img/glp-main-white.png" class="card-img-top" alt="" id="img-override-testimonial" />
                     <div class="card-body">
-                        <blockquote class="blockquote mb-4">
-                            <p id="testimonial-text">Testimonial Here</p>
+                        <blockquote class="blockquote">
+                            <p id="text-testimonial">Testimonial Here</p>
                             <footer class="blockquote-footer">Person Here</footer>
                         </blockquote>
                     </div>
@@ -213,10 +219,10 @@
             </div>
             <div class="col-md-4 gx-3 gy-4">
                 <div class="container-fluid card text-bg-dark">
-                    <img src="img/glp-main-white.png" class="card-img-top" alt="" id="testimonial-picture">
+                    <img src="img/glp-main-white.png" class="card-img-top" alt="" id="img-override-testimonial" />
                     <div class="card-body">
-                        <blockquote class="blockquote mb-4">
-                            <p id="testimonial-text">Testimonial Here</p>
+                        <blockquote class="blockquote">
+                            <p id="text-testimonial">Testimonial Here</p>
                             <footer class="blockquote-footer">Person Here</footer>
                         </blockquote>
                     </div>
@@ -224,10 +230,10 @@
             </div>
             <div class="col-md-4 gx-3 gy-4">
                 <div class="container-fluid card text-bg-dark">
-                    <img src="img/glp-main-white.png" class="card-img-top" alt="" id="testimonial-picture">
+                    <img src="img/glp-main-white.png" class="card-img-top" alt="" id="img-override-testimonial" />
                     <div class="card-body">
-                        <blockquote class="blockquote mb-4">
-                            <p id="testimonial-text">Testimonial Here</p>
+                        <blockquote class="blockquote">
+                            <p id="text-testimonial">Testimonial Here</p>
                             <footer class="blockquote-footer">Person Here</footer>
                         </blockquote>
                     </div>
@@ -237,7 +243,6 @@
     </div>
 
     <footer class="bg-dark text-center text-white">
-
         <!-- Grid container -->
         <div class="container p-4 pb-0">
             <!-- Section: Social media -->
@@ -263,12 +268,11 @@
         <!-- Grid container -->
 
         <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
             © 2023 Copyright:
             <a class="text-white" href="https://goodliftperformance.com">GoodLiftPerformance.com</a>
         </div>
         <!-- Copyright -->
-
     </footer>
 
     <!-- below includes Bootstrap Javascript -->
