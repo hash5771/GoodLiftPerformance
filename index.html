@@ -22,18 +22,18 @@
 </head>
 
 <body>
-    <nav class="navbar-dark navbar-collapse navbar-expand-lg bg-dark">
+    <nav class="navbar-dark navbar-collapse navbar-expand-xl bg-dark">
         <div class="container-fluid" id="navbarContent">
             <nav class="navbar-nav">
                 <a class="nav-link">
-                    <img src="img/glp-main-white.png" id="img-override-glpimage" />
+                    <img src="img/glp-main-white.png" id="img-override-glpimage" onresize="changeGLPimage()"/>
                 </a>
-                <button class="navbar-toggler mb-4" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler mb-4" id="navbarToggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup" >
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">
@@ -45,6 +45,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="articles.html"> Articles </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://good-lift-performance.square.site/"> Apparel </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html"> Contact Me </a>
@@ -173,10 +176,10 @@
         <div class="row">
             <div class="col-md-4 gx-3 gy-4">
                 <div class="container-fluid card text-bg-dark">
-                    <img src="img/photographs/DSC0001.JPG" class="card-img-top" alt="" id="img-override-testimonial" />
+                    <img src="img/glp-main-white.png" class="card-img-top" alt="" id="img-override-testimonial" />
                     <div class="card-body">
                         <blockquote class="blockquote">
-                            <p id="text-testimonial">Testimonial Here</p>
+                            <p id="img/glp-main-white.png">Testimonial Here</p>
                             <footer class="blockquote-footer">Person Here</footer>
                         </blockquote>
                     </div>
@@ -279,6 +282,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+    <script src="/javascript/index.js"></script>
 </body>
 
 </html>

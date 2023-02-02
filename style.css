@@ -60,6 +60,10 @@ p {
   padding-right: 10px;
 }
 
+#navbarNavAltMarkup {
+
+}
+
 #navbarContent {
   background-color: #231f20;
 }
@@ -122,15 +126,16 @@ p {
 }
 
 #img-override-carouselA, #img-override-carouselB, #img-override-carouselC {
-  width: 100%;
-  height: 600px !important;
+  width: 100% !important;
+  height: 400px !important;
   object-fit: cover;
   padding: 0px;
   opacity: 0.3;
 }
 
 #img-override-carouselA {
-  object-position: 0px -425px;
+  background-position: 100%;
+
 }
 
 #img-override-carouselB {
@@ -149,7 +154,7 @@ p {
 }
 
 #img-override-testimonial {
-  object-fit: fill;
+  object-fit: contain;
   align-items: center;
   display: flex;
   padding-top: 0px;
