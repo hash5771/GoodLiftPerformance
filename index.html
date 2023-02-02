@@ -21,20 +21,20 @@
     <title>Good Lift Performance About Me Page</title>
 </head>
 
-<body>
+<body onload="changeGLPImageSize()">
     <nav class="navbar-dark navbar-collapse navbar-expand-xl bg-dark">
         <div class="container-fluid" id="navbarContent">
-            <nav class="navbar-nav">
+            <nav class="navbar-nav" id="navbarContentB">
                 <a class="nav-link">
-                    <img src="img/glp-main-white.png" id="img-override-glpimage" onresize="changeGLPimage()"/>
+                    <img src="img/glp-main-white.png" id="img-override-glpimage"/>
                 </a>
-                <button class="navbar-toggler mb-4" id="navbarToggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler" id="navbarToggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup" >
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav" id="navbarElements">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">
                                 About Us

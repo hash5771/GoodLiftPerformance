@@ -42,7 +42,6 @@ p {
   padding-right: 25px;
   padding-top: 0px;
   padding-bottom: 10px;
-  align-items: center;
 }
 
 .navbar-nav {
@@ -53,6 +52,7 @@ p {
   padding-top: 5px;
   padding-bottom: 5px;
   text-shadow: 1px 1px 2px #27a9e140;
+  flex-direction: row;
 }
 
 .nav-item {
@@ -60,12 +60,20 @@ p {
   padding-right: 10px;
 }
 
-#navbarNavAltMarkup {
-
-}
-
 #navbarContent {
   background-color: #231f20;
+}
+
+#navbarToggler {
+  border-color: #FAF9F6;
+  border-style: dotted;
+  border-width: 2px;
+  width: 100px;
+  border-radius: 50px;
+  height: 100px;
+  align-items: center;
+  padding-bottom: 8px;
+  padding-top: 8px;
 }
 
 #text-aboutMe {
@@ -169,4 +177,28 @@ p {
   padding-right: 0px;
   padding-top: 0px;
   padding-bottom: 20px;
+}
+
+@media (min-width: 1200px) {
+  .navbar-expand-xl .navbar-nav {
+    flex-direction: row;
+  }
+  .container-fluid .navbar-nav {
+    flex-direction: row;
+  }
+  .container-fluid #navbarElements {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 1199px) {
+  .navbar-expand-xl .navbar-nav {
+    flex-direction: column;
+  }
+  .container-fluid .navbar-nav {
+    flex-direction: row;
+  }
+  .container-fluid #navbarElements {
+    flex-direction: column;
+  }
 }
